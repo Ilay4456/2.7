@@ -12,6 +12,8 @@ PORT = 5555
 SERVER = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 SERVER.bind(('127.0.0.1', PORT))
 clients = []
+changed = true 
+#nikker
 
 def dir_command(path):
     dir_path = path[4:]
